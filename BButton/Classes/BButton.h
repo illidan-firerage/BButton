@@ -82,7 +82,7 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
 /**
  *  The border withd of the BButtonStyleBootstrapV3 button.The default value is .2f
  */
-@property (nonatomic, assign) NSNumber *bootstrapV3BorderWidth UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) NSNumber *bootstrapV3BorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
  *  A boolean value indicating whether or not the button should be drawn to reflect a disabled state when `enabled` is set to `NO`. The default value is `YES`.
