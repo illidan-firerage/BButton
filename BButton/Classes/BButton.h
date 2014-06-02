@@ -65,9 +65,24 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
 @property (strong, nonatomic) UIColor *color;
 
 /**
+ *  The title color of the button in its normal state.
+ */
+@property (strong, nonatomic) UIColor *normalTitleColor;
+
+/**
+ *  The title color of the button in its highlight state.
+ */
+@property (strong, nonatomic) UIColor *highlightedTitleColor;
+
+/**
  *  The corner radius of the button. The default value is 6.0 for buttons initialized with style `BButtonStyleBootstrapV2`, or 4.0 for buttons initialized with style `BButtonStyleBootstrapV3`. @see BButtonType.
  */
 @property (strong, nonatomic) NSNumber *buttonCornerRadius UI_APPEARANCE_SELECTOR;
+
+/**
+ *  The border withd of the BButtonStyleBootstrapV3 button.The default value is .2f
+ */
+@property (nonatomic, assign) NSNumber *bootstrapV3BorderWidth UI_APPEARANCE_SELECTOR;
 
 /**
  *  A boolean value indicating whether or not the button should be drawn to reflect a disabled state when `enabled` is set to `NO`. The default value is `YES`.
